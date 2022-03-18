@@ -1,0 +1,38 @@
+{
+  "name": "@adidas/common",
+  "version": "0.0.1",
+  "description": "Contains the shared code for the adidas test project",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "files": [
+    "build/**/*"
+  ],
+  "scripts": {
+    "clean": "del ./build/*",
+    "build": "npm run clean && tsc",
+    "pub": "git add . && git commit -m \"Updates\" && npm version patch && npm run build && npm publish"
+  },
+  "keywords": [],
+  "author": "Phillip Kigenyi",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "del-cli": "^3.0.1",
+    "typescript": "^3.9.10"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.5",
+    "@types/jsonwebtoken": "^8.3.9",
+    "express": "^4.17.1",
+    "express-validator": "^6.4.0",
+    "node-nats-streaming": "^0.2.6",
+    "express-validation": "^3.0.6",
+    "jsonwebtoken": "^8.5.1",
+    "dayjs": "^1.10.4",
+    "http-errors": "~1.6.3",
+    "http-status": "^1.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:codephillip/adidas-common-lib.git"
+  }
+}
