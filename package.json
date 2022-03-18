@@ -1,5 +1,5 @@
 {
-  "name": "@adidas/common",
+  "name": "@adidastest-phillip/common",
   "version": "0.0.2",
   "description": "Contains the shared code for the adidas test project",
   "main": "./build/index.js",
